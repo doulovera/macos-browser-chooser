@@ -1,0 +1,15 @@
+.derivedData/
+.modulecache/
+
+# macOS
+.DS_Store
+
+# Xcode user state and local builds
+build/
+DerivedData/
+*.xcuserstate
+*.xcscmblueprint
+xcuserdata/
+
+# Swift Package Manager build output, if this project ever adds Package.swift
+.build/
