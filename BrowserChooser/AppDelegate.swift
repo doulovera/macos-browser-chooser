@@ -5,6 +5,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     private let appModel = AppModel()
     private var chooserWindow: ChooserWindow?
 
+    func applicationWillFinishLaunching(_ notification: Notification) {
+        NSApp.setActivationPolicy(.accessory)
+    }
+
     func applicationDidFinishLaunching(_ notification: Notification) {
         appModel.onNeedsPresentation = { [weak self] in
             self?.showChooserIfNeeded()
